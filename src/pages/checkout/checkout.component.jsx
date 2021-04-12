@@ -1,11 +1,10 @@
 import React, { useContext } from "react";
-
 import CheckoutItem from "../../components/checkout-item/checkout-item.component";
 import StripeCheckoutButton from "../../components/stripe-button/stripe-button.component";
-
-import { CartContext } from "../../providers/cart/cart.provider";
-
 import "./checkout.styles.scss";
+
+//context-api
+import { CartContext } from "../../providers/cart/cart.provider";
 
 const CheckoutPage = () => {
 	const { cartItems, totalPrice } = useContext(CartContext);

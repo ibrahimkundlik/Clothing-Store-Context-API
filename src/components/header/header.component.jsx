@@ -4,9 +4,10 @@ import CartDropdown from "../cart-dropdown/cart-dropdown.component";
 import { ReactComponent as Logo } from "../../assets/crown.svg";
 import { Link } from "react-router-dom";
 import { auth } from "../../firebase/firebase.utils";
+import "./header.styles.scss";
+
 import CurrentUserContext from "../../contexts/current-user/current-user.context";
 import { CartContext } from "../../providers/cart/cart.provider";
-import "./header.styles.scss";
 
 const Header = () => {
 	const currentUser = useContext(CurrentUserContext);

@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
-import "./collection.styles.scss";
 import CollectionItem from "../../components/collection-item/collection-item.component";
+import "./collection.styles.scss";
+
 //context-api
 import CollectionContext from "../../contexts/collection/collection.context";
 

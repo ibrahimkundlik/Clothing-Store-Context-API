@@ -4,10 +4,12 @@ import ShopPage from "./pages/shop/shop.component";
 import SignInAndSignUpPage from "./pages/sign-in-and-sign-up/sign-in-and-sign-up.component";
 import CheckoutPage from "./pages/checkout/checkout.component";
 import Header from "./components/header/header.component";
-import "./App.css";
 
 import { auth, createUserProfileDocument } from "./firebase/firebase.utils";
 import { Switch, Route, Redirect } from "react-router-dom";
+import "./App.css";
+
+//context-api
 import CurrentUserContext from "./contexts/current-user/current-user.context";
 
 const App = () => {

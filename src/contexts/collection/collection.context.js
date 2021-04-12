@@ -1,5 +1,5 @@
 import { createContext } from "react";
-import SHOP_DATA from "../../redux/shop/shop.data";
+import SHOP_DATA from "./shop.data";
 
 const CollectionContext = createContext(SHOP_DATA);
 

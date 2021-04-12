@@ -1,7 +1,8 @@
 import React, { useContext } from "react";
 import CustomButton from "../custom-button/custom-button.component";
-import { CartContext } from "../../providers/cart/cart.provider";
 import "./collection-item.styles.scss";
+
+import { CartContext } from "../../providers/cart/cart.provider";
 
 const CollectionItem = ({ item }) => {
 	const { name, price, imageUrl } = item;
@@ -17,7 +18,7 @@ const CollectionItem = ({ item }) => {
 			/>
 			<div className="collection-footer">
 				<span className="name">{name}</span>
-				<span className="price">{price}</span>
+				<span className="price">${price}</span>
 			</div>
 			<CustomButton onClick={() => addItem(item)} inverted>
 				Add to cart

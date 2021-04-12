@@ -1,9 +1,10 @@
 import React, { useContext } from "react";
-import { withRouter } from "react-router-dom";
 import CustomButton from "../custom-button/custom-button.component";
 import CartItem from "../cart-item/cart-item.component";
-import { CartContext } from "../../providers/cart/cart.provider";
+import { withRouter } from "react-router-dom";
 import "./cart-dropdown.styles.scss";
+
+import { CartContext } from "../../providers/cart/cart.provider";
 
 const CartDropdown = ({ history }) => {
 	const { cartItems, toggleHidden } = useContext(CartContext);
